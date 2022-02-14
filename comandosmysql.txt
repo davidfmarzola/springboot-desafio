@@ -1,0 +1,5 @@
+create database nomedatabase;
+show databases;
+use nomedatabase;
+show tables; -> de um banco de dados
+show columns from nometabela;
