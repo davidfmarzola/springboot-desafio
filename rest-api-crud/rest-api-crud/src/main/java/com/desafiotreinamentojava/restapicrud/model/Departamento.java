@@ -7,8 +7,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "departamento")
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Departamento {

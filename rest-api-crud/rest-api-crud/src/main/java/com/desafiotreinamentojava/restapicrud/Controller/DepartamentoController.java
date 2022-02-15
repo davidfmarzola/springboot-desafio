@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/departamento")
+@RequestMapping("/empresa/departamento")
 public class DepartamentoController {
     @Autowired
     IDepartamentoRepository repository;

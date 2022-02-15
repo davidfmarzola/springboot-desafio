@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/projeto")
+@RequestMapping("/empresa/projeto")
 public class ProjetoController {
 
     IProjetoRepository repository;
@@ -25,6 +25,7 @@ public class ProjetoController {
 
     @PostMapping() // criar
     public Projeto saveProjeto(@RequestBody Projeto projeto) {
+        System.out.println("Passou aqui -> " + projeto.toString());
         return repository.save(projeto);// Objeto não possui id, logo cria
     }
 
