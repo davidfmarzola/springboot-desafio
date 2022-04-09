@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class DepartamentoTests {
     @Test
     public void criar(){
-        Departamento d = new Departamento(1, "Carlos", 995451148);
-        System.out.println(d);
+        //Departamento d = new Departamento("Financeiro", 440);
+        //System.out.println(d);
     }
 }

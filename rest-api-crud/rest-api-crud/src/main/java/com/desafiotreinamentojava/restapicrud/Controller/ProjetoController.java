@@ -4,13 +4,15 @@ import com.desafiotreinamentojava.restapicrud.repository.IProjetoRepository;
 import com.desafiotreinamentojava.restapicrud.model.Projeto;
 //import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RestController
 @RequestMapping("/empresa/projeto")
 public class ProjetoController {
-
+    @Autowired
     IProjetoRepository repository;
 
     @GetMapping() // listar
