@@ -14,16 +14,13 @@ public class Departamento {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="id_departamento")
     private int id;
 
-    @Column(length=60, unique = true)
     private String nome;
 
-    @Column(unique = true)
     private int numero;
 
-    @OneToMany(cascade = {CascadeType.PERSIST}, fetch = FetchType.LAZY)
-    @JoinColumn(name="id_departamento")
+    @OneToMany
+    @JoinColumn(name="id_funcionario")
     private List<Projeto> projetos;//um departamento pode ter vários projetos
 }
