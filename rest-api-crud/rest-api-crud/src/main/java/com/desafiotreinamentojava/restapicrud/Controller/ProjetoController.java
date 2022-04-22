@@ -27,7 +27,11 @@ public class ProjetoController {
 
     @PostMapping() // criar
     public Projeto saveProjeto(@RequestBody Projeto projeto) {
-        System.out.println("Passou aqui -> " + projeto.toString());
+        /*try {
+            System.out.println(projeto.getDepartamento());
+        } catch (NullPointerException npe) {
+            System.out.println("Campo departamento é nulo");
+        }*/
         return repository.save(projeto);// Objeto não possui id, logo cria
     }
 

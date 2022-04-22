@@ -20,7 +20,6 @@ public class Departamento {
 
     private int numero;
 
-    @OneToMany
-    @JoinColumn(name="id_funcionario")
-    private List<Projeto> projetos;//um departamento pode ter vários projetos
+    @OneToMany(mappedBy = "departamento")
+    private List<Projeto> projetos;//um departamento para vários projetos
 }

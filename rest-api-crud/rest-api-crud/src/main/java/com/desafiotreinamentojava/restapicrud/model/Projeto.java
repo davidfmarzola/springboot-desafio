@@ -18,10 +18,11 @@ public class Projeto {
     private String nome;
 
     @ManyToOne
-    @JoinColumn(name="id_departamento")
-    private Departamento departamento;//vários projetos para um departamento
+    // fica aqui pois é o projeto que terá a foreign key
+    @JoinColumn(name="departamento_id")
+    private Departamento departamento;//vários projetos para um único departamento
 
-    @ManyToOne
-    @JoinColumn(name="id_funcionario")
-    private Funcionario funcionario;
+//    @ManyToOne
+//    @JoinColumn(name="id_funcionario")
+//    private Funcionario funcionario;
 }

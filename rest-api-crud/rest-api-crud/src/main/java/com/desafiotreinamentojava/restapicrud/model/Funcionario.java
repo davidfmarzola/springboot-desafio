@@ -29,8 +29,8 @@ public class Funcionario {
     @OneToOne
     private Endereco endereco;
 
-    @OneToMany
-    @JoinColumn(name="id_funcionario")
-    private List<Projeto> projetos;//um funcionario pode estar em vários projetos
+//    @OneToMany
+//    @JoinColumn(name="id_funcionario")
+//    private List<Projeto> projetos;//um funcionario pode estar em vários projetos
 
 }
